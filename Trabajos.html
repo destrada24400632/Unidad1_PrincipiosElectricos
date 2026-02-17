@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Trabajos</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔌</text></svg>">
+
+    
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #1f3c88, #4f6fdc);
+            min-height: 100vh;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            color: white;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+            letter-spacing: 2px;
+        }
+
+        header h3 {
+            margin-top: 10px;
+            font-weight: 300;
+        }
+
+        .contenedor {
+            max-width: 1000px;
+            margin: -40px auto 40px;
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+        }
+
+        .autor {
+            text-align: center;
+            font-weight: 600;
+            margin-bottom: 30px;
+            color: #1f3c88;
+        }
+
+        h2 {
+            color: #1f3c88;
+            margin-bottom: 10px;
+        }
+
+        .descripcion {
+            text-align: justify;
+            line-height: 1.7;
+            color: #333;
+            margin-bottom: 40px;
+        }
+
+        .trabajos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #f4f6f8;
+            border-radius: 12px;
+            padding: 25px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        .card h4 {
+            margin-bottom: 15px;
+            color: #1f3c88;
+        }
+
+        .card a {
+            display: inline-block;
+            padding: 10px 18px;
+            background: #1f3c88;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            transition: background 0.3s;
+        }
+
+        .card a:hover {
+            background: #162a5c;
+        }
+
+        /* PRÁCTICA DESTACADA */
+        .practica {
+            background: linear-gradient(135deg, #ffcc00, #ff9900);
+            color: #000;
+            transform: scale(1.05);
+            border: 2px solid #ff9900;
+            grid-column: span 2;
+        }
+
+        .practica h4 {
+            color: #000;
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+
+        .practica a {
+            background: #000;
+        }
+
+        .practica a:hover {
+            background: #333;
+        }
+
+        footer {
+            text-align: center;
+            color: white;
+            padding: 15px;
+            font-size: 0.9rem;
+        }
+
+        @media(max-width: 600px){
+            .practica{
+                grid-column: span 1;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Trabajos</h1>
+        <h3>Principios Eléctricos</h3>
+    </header>
+
+    <div class="contenedor">
+        <p class="autor">Alumno: Diego Ivan Estrada Orozco</p>
+
+        <h2>Descripción de la materia</h2>
+        <p class="descripcion">
+            La materia de Principios Eléctricos se enfoca en el estudio de los fundamentos de la
+            electricidad, tales como corriente, voltaje, resistencia y potencia, así como el
+            análisis de circuitos eléctricos. Esta asignatura proporciona las bases necesarias
+            para comprender el funcionamiento de dispositivos eléctricos y electrónicos
+            utilizados en aplicaciones domésticas, industriales y tecnológicas.
+        </p>
+
+        <h2>Trabajos en PDF</h2>
+
+        <div class="trabajos">
+
+            <div class="card practica">
+                <h4>Práctica de Laboratorio</h4>
+                <a href="https://drive.google.com/file/d/1WuSt-mL3FBN6oDlJMRqnU4pXVnCDfYS2/view?usp=drive_link" target="_blank">Abrir Práctica</a>
+            </div>
+
+            <div class="card">
+                <h4>Codigo de Colores</h4>
+                <a href="https://drive.google.com/file/d/1fN9p0elhe3pNdQ-LGrDnE-pOoWJ-mUzG/view?usp=drive_link" target="_blank">Abrir PDF</a>
+            </div>
+
+            <div class="card">
+                <h4>Conceptos</h4>
+                <a href="https://drive.google.com/file/d/1fymarVuJQkzV2MWd2StTml50SdPOJR_T/view?usp=drive_link" target="_blank">Abrir PDF</a>
+            </div>
+
+            <div class="card">
+                <h4>Leyes de Kirchhoff</h4>
+                <a href="https://drive.google.com/file/d/1vwkxE8fHknDFXamuATOxo11wWiDgGunO/view?usp=drive_link" target="_blank">Abrir PDF</a>
+            </div>
+
+            <div class="card">
+                <h4>Capacitor y Bobina</h4>
+                <a href="https://drive.google.com/file/d/1Mx9LxfMtGD0pazzfO1u7v8b2yWdTsE_b/view?usp=drive_link" target="_blank">Abrir PDF</a>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        Principios Eléctricos
+    </footer>
+
+</body>
+</html>
